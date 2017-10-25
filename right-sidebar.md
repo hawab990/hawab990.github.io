@@ -1,6 +1,6 @@
 ---
 title: My page
-layout: default
+layout: right-sidebar
 ---
 ## {{ page.title }}
 
