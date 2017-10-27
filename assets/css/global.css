@@ -1975,6 +1975,8 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 				right: 2em;
 				top: 0;
 				line-height: 5.5em;
+
+
 			}
 
 				#nav > ul > li {
@@ -2346,6 +2348,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 					font-weight: 700;
 					font-size: 0.95em;
 					letter-spacing: 0.075em;
+					text-align: left
 				}
 
 					#navPanel .link:first-child {

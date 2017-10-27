@@ -1,14 +1,7 @@
  /* Style the Image Used to Trigger the Modal */
 .myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-	width:400px;
-	height:400px;
-	margin: auto;
-	display: block;
-    margin: 0 auto;
-	margin-bottom:40px;
+margin-top: -50px;
+margin-bottom: 50px;
 
 }
 

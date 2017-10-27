@@ -1,4 +1,6 @@
-var slideIndex = 2;
+
+//https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -7,9 +9,9 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("mySlider");
   if (n > x.length) {slideIndex = 2}    
-  if (n < 2) {slideIndex = x.length}
+  if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }

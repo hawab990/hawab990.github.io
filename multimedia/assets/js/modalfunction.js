@@ -1,22 +1,19 @@
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images
-
-//change this to myslides
-var img = $('.myImg');
-var modalImg = $("#img01");
-var captionText = document.getElementById("caption");
-$('.myImg').click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+var modal = document.getElementById("myModal");
+var img1 = document.getElementById("expenseIQ");
+var modalImg = document.getElementById("img01");
+// i is a function parameter that is passed in to an anonymous function
+//like in java data types are declared. In Javascript they are not.
+function img_click(i){
+  i.onclick=function(){
+    modal.style.display="block";
+    modal_img.src=this.src;
+    }
 }
+// Get the <span> element that closes the modal
+var span=document.getElementsByClassName("close")[0];
+span.onclick=function(){
+  modal.style.display="none";
+}
+
+img_click(img1);
