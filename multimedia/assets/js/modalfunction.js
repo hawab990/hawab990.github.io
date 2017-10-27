@@ -1,6 +1,8 @@
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption https://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images
+
+//change this to myslides
 var img = $('.myImg');
 var modalImg = $("#img01");
 var captionText = document.getElementById("caption");
