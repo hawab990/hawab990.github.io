@@ -292,7 +292,7 @@
 	}
 
 	.\31 2u, .\31 2u\24 {
-		width: 80%;
+		width: 70%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -1384,8 +1384,9 @@
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 2.5em 0;
+			width: 60%;
+			margin: auto;
+			margin-bottom:20px;
 		}
 
 		.image.left {
@@ -1719,7 +1720,7 @@
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("images/bg01.png"), url("../../images/header.jpg");
+
 		background-position: top left, center center;
 		background-size: auto, cover;
 	}

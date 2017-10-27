@@ -13,6 +13,7 @@
 		<!--accordian adapted from w3schools and inspired by Josh-->
 		<link rel="stylesheet" href="../assets/css/global.css" />
 		<link rel="stylesheet" href="assets/css/accordian.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
 		<!--accordian javascript files-->
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -106,9 +107,28 @@
 										<div id="content">
 
 											<!-- Content -->
-												<article>
+											
 
-													<span class="image featured"><img src="images/pic08.jpg" alt="" /></span>
+									
+
+
+												<!-- Trigger the Modal -->
+													<img class="myImg" src="images/expenseiquikit.jpg" >
+													<img class="myImg" src="images/expenseiquikit.jpg">
+													
+													
+													<!-- The Modal -->
+													<div id="myModal" class="modal">
+													
+													<!-- The Close Button -->
+													<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+													
+													<!-- Modal Content (The Image) -->
+													<img class="modal-content" id="img01">
+													
+													<!-- Modal Caption (Image Text) -->
+													<div id="caption"></div>
+													</div>
 
 													<h2>UI Kit Timeline</h2>
 													
@@ -126,7 +146,7 @@
 													<div class="panel">
 													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 													</div>us augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-												</article>
+											
 
 										</div>
 									</div>
@@ -149,6 +169,7 @@
 		<!-- Scripts -->
 
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/modalfunction.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
