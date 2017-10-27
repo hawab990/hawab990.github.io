@@ -5,6 +5,11 @@
     transition: 0.3s;
 	width:400px;
 	height:400px;
+	margin: auto;
+	display: block;
+    margin: 0 auto;
+	margin-bottom:40px;
+
 }
 
 .myImg:hover {opacity: 0.7;}

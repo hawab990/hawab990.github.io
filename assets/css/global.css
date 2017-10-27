@@ -9,13 +9,15 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		text-align:center;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -57,6 +59,62 @@
 		box-sizing: border-box;
 	}
 
+	
+	
+	
+/* w3 Schools customized image slider */
+	.w3-content img 
+	{ 		display: inline-block;
+	float:left;
+	clear:right;
+		width:200px;
+		height:200px;
+		
+		
+
+		margin-right:10px;
+
+
+
+	}
+	p{
+	text-align:justify;
+	}
+	
+	.w3-button
+	{
+		
+		color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+	display: inline-block;
+	margin-top:10px;
+
+	}
+	.DefaultImage
+	{
+				display: inline-block;
+	float:left;
+	clear:right;
+		width:30% !important;
+	}
+	
+	.w3-button:hover
+	{
+
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+	}
+	
 /* Containers */
 
 	.container {
@@ -292,7 +350,7 @@
 	}
 
 	.\31 2u, .\31 2u\24 {
-		width: 70%;
+		width:80%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -1112,6 +1170,8 @@
 		letter-spacing: 0.04em;
 		color: #404248;
 		margin: 0 0 1em 0;
+		
+		text-align:center;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1232,6 +1292,21 @@
 		margin: 2.5em 0 0 0;
 	}
 
+	
+	
+	.subheading
+	{
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.065em;
+			font-size: 0.9em;
+			color: #696969;
+			margin: 0;
+			text-align:center
+		
+		
+	}
 	header.major {
 		border-bottom: solid 1px #dbdbdb;
 		margin: 0 0 3em 0;
@@ -1382,13 +1457,7 @@
 			width: 100%;
 		}
 
-		.image.featured {
-			display: block;
-			width: 60%;
-			margin: auto;
-			margin-bottom:20px;
-		}
-
+	
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
