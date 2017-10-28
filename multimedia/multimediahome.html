@@ -111,18 +111,15 @@
 
 												<!-- Trigger the Modal -->
 													<div class="myImg">
-														<img src="images/expenseiquikit.jpg" id="expenseIQ" alt="expenseIQ" >
+										
+															<!-- Tnline styling had to be used as the img tag is overriding the image dimensions and !important does not work.
+																 Removing img  tag from global.css  has more far reaching effects.-->
+														<img src="images/expenseiquikit.jpg" id="expenseIQ" alt="expenseIQ" width="60%" height="90%"   cursor= "pointer" >
 			
 													</div>
-													<!-- The Modal -->
-													<div id="myModal" class="modal">
-													
-													<!-- The Close Button -->
-													<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-													
-													<!-- Modal Content (The Image) -->
-													<img class="modal-content" id="img01" src="images/expenseiquikit.jpg">
-																									
+												
+														
+											
 
 													
 													
@@ -144,9 +141,12 @@
 													<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 													<div class="w3-content w3-display-container">
 					
-													
-				
-															
+															<img src="images/expenseiquikit.jpg" id="expenseIQ" class="mySlides" style="display: none;">
+															<img src="images/wanakabackground.jpg" id="wanakabackground" class="mySlides" style="display: block;">
+															<div class="modal" id="myModal">
+																	<span class="close">×</span>
+																	<img class="modal-content" id="img01">
+														
 									
 													
 												
@@ -166,7 +166,10 @@
 															<div class="w3-content w3-display-container">
 													
 							
-														
+																	<img class="mySlides" src="img_fjords.jpg">
+																	<img class="mySlides" src="img_lights.jpg">
+																	<img class="mySlides" src="img_mountains.jpg">
+																	<img class="mySlides" src="img_forest.jpg">
 																
 											
 															
