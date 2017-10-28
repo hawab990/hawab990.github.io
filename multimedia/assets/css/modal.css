@@ -3,6 +3,7 @@
 margin-top: -50px;
 margin-bottom: 50px;
 
+
 }
 
 .myImg:hover {opacity: 0.7;}
@@ -20,14 +21,14 @@ margin-bottom: 50px;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+} 
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 0 auto !important;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width:100% !important;
+    max-width: 700px !important;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
