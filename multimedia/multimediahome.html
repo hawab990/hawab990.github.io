@@ -118,7 +118,18 @@
 			
 											
 		
-													
+														<script>
+															jQuery(function ($) {
+  $("accordian").hover(function () {
+      $(this).find('.panel').stop(true, true).slideDown()
+  }, function () {
+      $(this).find('.panel').stop(true, true).slideUp()
+  }).find('panel').hide()
+
+})
+
+															</script>
+															 
 													<!-- Modal Caption (Image Text) -->
 													<div id="caption"> </div>
 													</div>
@@ -128,8 +139,7 @@
 													<div class="panel" >
 														
 
-														<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-														<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
 														<div class="w3-content w3-display-container">
 
 													
@@ -152,7 +162,7 @@
 												 
 												</div>
 													
-													<button class="accordion" style="max-height: 500px;">Design</button>
+													<button class="accordion" >Design</button>
 													<div class="panel">
 														
 													<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -232,6 +242,8 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/assets/js/main.js"></script>
 				<script src="assets/js/accordian.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	</body>
+	
 </html>
