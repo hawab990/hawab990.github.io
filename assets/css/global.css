@@ -30,6 +30,12 @@
 
 
 }
+
+.description audio {
+    min-width: 500px;
+	height: 32px;
+	text-align:center !important;
+}
 	html 
 	
 		{
