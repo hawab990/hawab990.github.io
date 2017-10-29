@@ -44,11 +44,10 @@
 													<a href="#">Multimedia</a>
 													<ul>
 														<li><a href="#">UI Kit</a></li>
-															<li><a href="soundscape.html">Sounds Scape</a></li>
-					
-															<li><a href="lifehackvideo.html">LifeHack Video</a></li>
-															<li><a href="3dmodel.html">3D Model</a></li>
-															<li><a href="webanimation">Web Animation</a>
+															<li><a href="#">Sounds Scape</a></li>
+															<li><a href="#">LifeHack Video</a></li>
+															<li><a href="#">3D Model</a></li>
+															<li><a href="#">Web Animation</a>
 														<li>
 															
 													
@@ -72,8 +71,8 @@
 				<div id="main-wrapper">
 					<div class="wrapper style2">
 						<div class="inner">
-
 							<div class="container">
+								
 								<div class="row">		
 									<div class="9u 12u(mobile)">
 								
@@ -109,16 +108,10 @@
 										<div id="content">
 
 											<!-- Content -->
-											<div class="description">
-												<p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-												<p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-												<p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-												<p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-												<p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-											</div>
 
 												<!-- Trigger the Modal -->
 												
+										
 															<!-- Tnline styling had to be used as the img tag is overriding the image dimensions and !important does not work.
 																 Removing img  tag from global.css  has more far reaching effects.-->
 														<img src="images/expenseiquikit.jpg" id="expenseIQ" alt="expenseIQ" width="60%" height="90%"   cursor= "pointer" >
@@ -127,6 +120,13 @@
 		
 														<script>
 															jQuery(function ($) {
+  $("accordian").hover(function () {
+      $(this).find('.panel').stop(true, true).slideDown()
+  }, function () {
+      $(this).find('.panel').stop(true, true).slideUp()
+  }).find('panel').hide()
+
+})
 
 															</script>
 															 
@@ -143,7 +143,7 @@
 														<div class="w3-content w3-display-container">
 
 													
-														<img src="images/planning.JPG" id="planning" class="mySlides" style="display: block; border-radius: 25px;">
+														<img src="images/planning.jpg" id="planning" class="mySlides" style="display: block; border-radius: 25px;">
 														<div class="modal" id="myModal">
 														<span class="close">×</span>
 														<img class="modal-content" id="img01">
@@ -240,7 +240,7 @@
 			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-				<script src="assets/js/main.js"></script>
+			<script src="/assets/js/main.js"></script>
 				<script src="assets/js/accordian.js"></script>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
