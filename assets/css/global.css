@@ -23,6 +23,13 @@
 	
 	}
 
+	/* Star Rating */
+	.checked {
+		color: orange;
+	}
+
+	
+
 .description p
 
 { margin-top:-30px;
@@ -61,6 +68,7 @@
 	cursor: pointer;
 	image-orientation: 0deg;
 	border-radius: 25px;
+	margin-bottom: 50px;
 	
 
 	}
@@ -1748,6 +1756,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 			left: 24px;
 		}
 
+	
 			.box.feature1 header.second p {
 				line-height: 1em;
 			}
