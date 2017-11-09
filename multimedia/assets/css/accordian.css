@@ -1,5 +1,5 @@
-button.accordion {
-    background-color: #000;
+button.accordion  {
+    background-color:darkblue;
     color: #000;
     cursor: pointer;
     padding: 18px;
@@ -29,10 +29,17 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: darkblue;
     max-height: 0px;
     min-height:0px;
-
+ border-radius: 10px;
     overflow: scroll;
+    
     transition: max-height 0.2s ease-out;
+}
+
+
+div.panel li {
+text-align: left;
+color: white;
 }
