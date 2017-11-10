@@ -73,7 +73,9 @@
 	margin-bottom: 50px;
 	max-width: 80%;
 	display: block;
+	border: 1px solid black;
 	text-align: center;
+	box-shadow: 10px 10px 5px #888888;
 	
 
 	}
@@ -1570,8 +1572,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 		display: inline-block;
 		background-color: #4091bf;
 		border-radius: 8px;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.35);
-		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+		box-shadow: 10px 10px 5px #888888;		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		color: #fff !important;
 		text-decoration: none;
 		text-transform: uppercase;
