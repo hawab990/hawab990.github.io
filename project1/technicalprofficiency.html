@@ -86,8 +86,7 @@
 												</div>
 													
 															<div class="customtimeline">
-																<h4><a id="introduction"></a>Introduction</h4>
-																	
+																<h4><a id="introduction"></a>Introduction</h4>	
 															<p>Project1 in the community group consisted of a lot of coding and being exposed to an array of different languages to which all posed a challenge and means to grow one vocabulary of languages.
 															Moreover, the progressive nature of project1 was that it allowed us to gradually ease into the software development environment that involved much group work and intragroup communication. 
 															As part of the client's needs, there was 4 assigned tasks that are the following: the Visual Scan tool, Aya App, Internet of things Database API and a VR rendition of the Visual Scan tool. 
@@ -108,14 +107,174 @@
 															This enabled the size of the image view to be controlled by changing the random upper and lower limit parameters</p>
 														
 															<img src="images/technicalprofficiency/Question1/randommagesizegenerator.PNG" id="randomizer" alt="randomizer">
-															
-															<img src="images/professional/martinkeen.gif" id="randomizer" alt="This will display an animated GIF" />
-															
+
+							
 															<p>After the first initial meeting, the client needed information in the CSV to be more meaningful. This was remedied by adding functionality to display the size criteria of the imaged tapped. A simple method that checks the passed in random size integer and returns the corresponding size string value. 
 															Following the preparation of the flashTrial constructor and its overriding toCSV toString to accept a size parameter, the categorize methods size property is seamlessly included in the class instances. 
 															The  Simplicity of this code meant that it can be reusable and easily incorporated into additional classes with similar functionality.</p>
-															</div>
 															
+															<img src="images/technicalprofficiency/Question1/sizecategory.PNG" id="randomizer" alt="randomizer">
+															
+															<P> Progressing from the Visual Scan tool, it was time for the group to take on board a medical passport app that was presented by the District Health Board. 
+																Fortunately, fellow design students drafted page layouts for the appliscation for us to follow.
+																<br>
+																<br>
+																In the instance of coding the Appointments functionality that enabled users to add/edit and delete appointments with timestamps,
+															 	we needed to inherit the gitView public method from the public interface adapter to populate a custom listview containing the patient's information. 
+																This custom adapter required a list of textViews that could have been declared as a global variable restricting its use within the parent activity. This is resolved by creating a simple Textview container class (courtesy of Samantha and adapted for this class) 
+																instantiated inside the method and its elements set by the retrieved XML  appointment entries.
+																This increases code modularity and tidiness as the classes sole purpose is to hold elements.
+															</P>
+															<img src="images/technicalprofficiency/Question1/textviewcontainer.PNG" id="randomizer" alt="randomizer">
+															<P>
+																As the AYA Apps activities increase, so is the need for a more efficient way to switch between intents.  
+																Having a separate button handler for each intent could prove cumbersome when adding more activities. 
+																This code conveniently creates an instance of the Intent when switching on the XML elements. 
+																As a result, the class method startActivity is executed according to the intent variable. 
+															</P>
+															<img src="images/technicalprofficiency/Question1/intentswitcher.PNG" id="randomizer" alt="randomizer">
+															<p>
+																Also, the app consisted of the Edit Health Information registration form that had many text field and text view elements. 
+																Because of this, there was much need for a trivial- uniform labeling of their element ids. 
+																Having the id name and element they constituted separated by an underscore meant for easy search and fixes. 
+															</p>
+															<img src="images/technicalprofficiency/Question1/tidyxml.PNG" id="randomizer" alt="randomizer">
+															<p>
+																Later in the semester, a client needed a means to monitor their hardware inventory. 
+																The ASP.net API is a framework that makes it an ideal platform for building HTTP services including RESTful applications. 
+																This allows for an easy transition to building a Mobile version for the IOT platform that simply makes a series of HTTP URL requests hitting the Database for JSON metadata.
+															</p>
+															<p>
+																An API get request was needed to view all the items returned. However, database dependencies in the items table with the type model and subTypeModel tables made it's difficult. 
+																This was solved by iterating through the items table and selecting its properties based on its ID’s.  Foreaching over the collection in turn connects the tables to the intermediary Item table. 
+																And because the itemModel Table is a foreign key of newSubtype, that becomes its parameter. 
+																This is believed to be good quality code as the get method accepts an ID, makes a database query and selects on where the  ID in the URL  get request is located and matches it with the items table ID. 
+																This contains a dynamically populated list of values in the Item table. 
+															</p>
+															<img src="images/technicalprofficiency/Question1/viewitemsreturned.PNG" id="randomizer" alt="randomizer">
+															<p>
+																	Next, it was my job to build a mobile app that makes HTTP requests, processes the response and displays it in a listview. However, the requirement was to display not only the information in the person entity, 
+																	but code logic was needed to switch between the asynchronous threads to display the Items, ItemsIssued, ItemsDeployed depending on the values of the dropdown.
+																	After completing what is perceived an easy task became an ever more time-consuming endeavor when adding a search function to the application. 
+																	The SearchDatabase class contained flow logic needed to grab and append the value of the text value followed by the drop downs’ category selection.
+																	<br>
+																	<br>
+																	What is the highlight of modularized code is the below example logic that takes the value of the spinner and assigns it a new value parameter “SwappedValueContainer”. 
+																	This is then passed in along with the search string “inputStringHolder” that is added to the HTTP URL of the HTTP worker. The code below does suffer from lack of method cohesion. 
+																	This can be identified by the dependency this method has on the returning value of another method call “SelectedSpinnerValue”. 
+																	However, the simplicity of this code is its redeeming quality as it can be understood without little context. 
+																</p>
+																<img src="images/technicalprofficiency/Question1/httpworkerswitcher.PNG" id="randomizer" alt="randomizer">
+																<p>
+																	All of the category information needs to be displayed in a listview on the same activity by means of selecting the category from the drop-down and then typing a search for the category in the text field. This was accomplished by adding the listview to a fragment so that it would display the URL response table information dynamically upon submitting the search. However, because the fragment_listview is a separate activity, bundling of JSON data is needed for cross activity transfer. 
+																	On the listview fragment, the receiving bundled information corresponding to each table category information is then stored into an ArrayList. Sending the Array of JSON objects to the List View fragments required a switch statement consisting of different array adapters that would accept the bundled array depending on the Spinners selection type. What is qualitatively sound about this code is the separation and of the listview fragment from the main activity. 
+																	It wasn't as simple as using one array adapter for the 4 selection view types.
+																	Rather than extending from the fragment class separate from the activity but within the same namespace, this code is compacted into a separate class. This ensures there is the least amount of common coupling between the classes. They do not share any global variables but the bundled data. 
+																	This improves debugging by better localization of errors. It is relatively easier to fix packaged code compared to its cohesive counterpart. 
+																	Going back and fixing errors in the main activity will not drastically affect the listviews’s functionality.
+																</p>
+																<img src="images/technicalprofficiency/Question1/arrayadapterswitcher.PNG" id="randomizer" alt="randomizer">
+																<p>
+																	After completing the IOTS App, we decided to make a virtual reality rendition of the mobile visual scan tool.  We used Unity as our development platform as it is equipped with a wide range of VR supporting class libraries including button input for VR peripherals and the camera view. 
+																	Unity was our choice because the classes are seamless to integrate into our Visual Scan base. 
+																	Also, because Unity is primarily written in c#, and its support for the popular Virtual Reality technology, this seemed more of a fitting option.
+																	<br>
+																	<br>	
+																	After completing the core mechanics of the game, the client needed some way to monitor their performance. A simple solution for this was to output into a text file the X and Y coordinates, also including the Boolean value that represents successful color change detectionby. Conversely, there was a slight issue with the output text file getting overridden with every new instance of the game. 
+																	The code below would concatenate an incrementing integer into the string path. 
+																	Whilst it checks if a pre-existing file does not exist. Based on this it will return the new modified path. This function is called in the endgame()  where it creates a new file on loading a new scene. The illustration below, I believe to be good quality code in the sense that it is a short method used to do one task.  
+																	Also, the name of the method entails enough information to call the method without looking at its body.
+																	
+																</p>
+																<img src="images/technicalprofficiency/Question1/newfile.PNG" id="randomizer" alt="randomizer">
+																
+																
+																<h4><a id="Question2"></a>Question 2:How well did you follow best practices in development?</h4>
+																<div class="customrating">
+																<h6> 3/5</h6>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star"></span>														
+																</div>
+
+																<p>
+																
+																	In general software development, proper error handling is perceived to be good programming practice. In the IOT App, 
+																	The method responsible for input text field processing is first initialized. The addition of the .get() makes sure all the logic following the inputLangeText() method is run before executing the asynchronous thread. 
+																	The execution thread below is wrapped in a short try/catch block that will handle the errors pertaining to that thread. The implementation of error handling advocates robust code that does not easily break. 
+																	In the case that it does, exception handling provides helpful information on the source of failure.
+																</p>
+
+																<img src="images/technicalprofficiency/Question2/errorhandling.PNG" id="randomizer" alt="randomizer">
+																<p>
+																	In the ViewDatabase class of the IOTDatabaseApp, below is a globally stored method “ConvertToJSONArrayItem” that will take the method call contertToAPIcommand return JSON objects and convert it to a JSON array. Although, calling methods within another is not ideal. 
+																	However, storing the result of the JSON array converter method into a variable means its return value can be used anywhere else in the activity. 
+																	This is an instance of good practice with code reusability in mind.
+																</p>
+																<img src="images/technicalprofficiency/Question2/codereuse.PNG" id="randomizer" alt="randomizer">
+																	
+																<h4><a id="Question3"></a>Question 3:How well did you use appropriate version control?</h4>
+																<div class="customrating">
+																<h6> 4/5</h6>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star"></span>														
+																</div>
+															
+																<p>
+																	Over the entire semester the group has been adhering the git hub commit message rules. This message contains the name of the master branch currently being worked on, followed by the date, and a lengthy commit message that details the changes made. 
+																	This greatly clarifies the process of pulling the correct updated version of the branch. Descriptive commit messages assist with reviewing contribution in the future. 
+																	Also, it is favorable to commit big and commit often.
+																	Abundant commits help save time when rolling back to a previous version of the code if errors should arise.
+																	<br>
+																	<br>
+																	Because the IOT Database API was quite large consisting of many models and controllers, this needed a more productive and safer way of having multiple developers to work on the same model concurrently. 
+																	Branching allows for multiple developers to work on the API while the integrity of the master IOT Database branch is protected. To avoid merge conflicts, once modifications are made to the branch “IOTDatabaseAbdel” is when a pull request occurs. 
+																	This branch is then authorized to assume the new IOT Database branch.
+																</p>
+																<img src="images/technicalprofficiency/Question3/branching.PNG" id="randomizer" alt="randomizer">
+																<img src="images/technicalprofficiency/Question3/forking.PNG" id="randomizer" alt="randomizer">
+																<h4><a id="Question4"></a>Question 4:To what extent do you think you contributed an equal portion of the overall project</h4>
+																<div class="customrating">
+																<h6> 3/5</h6>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star checked"></span>
+																<span class="fa fa-star"></span>																	
+																<span class="fa fa-star"></span>														
+																</div>
+																<p>
+																	I believe to some degree I have contributed an equal portion to the overall project. 
+																	I had a firm presence in the stages of the software development lifecycle of the AYA Passport application.
+																	 I attended all the client and scrum meetings from its initial stages to its deployment.
+																	 More so, alongside Samuel and Samantha, I made significant contributions to the functionality of the application. 
+																	 This includes writing the Health information page and the appointment page amongst the other related activities.
+																	 However, the first assigned task was primarily to reinforce my understanding of the requirements analysis and implementation of code stage as part of the SDLC.
+																	 Furthermore, after numerous meetings with DR	Mary,
+																	 I managed to accomplish the task of receiving informative feedback regarding the Visual Scan Tool. 
+																	 <br>
+																	 <br>
+																	 I completed my tasks of programming sections of the IOT web API controllers such as the ItemsController and the ItemsIssued Controller. 
+																	 In addition to this, I fulfilled my task to complete a Mobile version of the IOTDatabase that made a series of HTTP calls from Web API and applied search functions on the containing information. 
+																	 <br>
+																	 <br>
+																	 Lastly, using unity, I was able to design a VR version of the Visual Scan Wander Tool with varying degrees of success.
+																	Ultimately, I believe my input was significant to each products fruition.
+																</p>
+																<p>
+
+																	
+																</p>
+	
+														</div>
+														
+
+
+
 									</div>
 															
 												<div class="3u 12u(mobile)">
@@ -137,8 +296,8 @@
 																			<ul style="list-style-type:circle">
 								
 																			<li><a href="#Question1">Code Quality</a></li>
-																			  <li><a href="Question2">Best Practices</a></li>
-																			  <li><a href="Question3">Version Control</a></li>																			 
+																			  <li><a href="#Question2">Best Practices</a></li>
+																			  <li><a href="#Question3">Version Control</a></li>																			 
 																			  <li><a href="#Question4">Overall Contribution</a></li>
 																																				
 																			  

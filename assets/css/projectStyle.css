@@ -1870,6 +1870,8 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 
 		background-position: top left, center center;
 		background-size: auto, cover;
+		background: rgb(10, 186, 240);
+		
 	}
 
 	#main-wrapper {
