@@ -23,6 +23,8 @@
 	
 	}
 
+
+	/* custom rating title*/
 	/* Star Rating */
 	.checked {
 		color: orange;
@@ -69,6 +71,9 @@
 	image-orientation: 0deg;
 	border-radius: 25px;
 	margin-bottom: 50px;
+	max-width: 80%;
+	display: block;
+	text-align: center;
 	
 
 	}
