@@ -29,7 +29,7 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 18px;
-    background-color: darkblue;
+    background-color:darkblue;
     max-height: 0px;
     min-height:0px;
  border-radius: 10px;

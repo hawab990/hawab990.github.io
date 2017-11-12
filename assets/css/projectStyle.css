@@ -1572,7 +1572,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 		display: inline-block;
 		background-color: #4091bf;
 		border-radius: 8px;
-		box-shadow: 10px 10px 5px #888888;		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+		box-shadow: 7px 7px 5px #888888;		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		color: #fff !important;
 		text-decoration: none;
 		text-transform: uppercase;
