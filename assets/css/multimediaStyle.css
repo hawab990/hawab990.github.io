@@ -173,19 +173,34 @@
 
 
 
-	.mySlides
+	.mySlides 
 	{
 
 		float: left;
 		cursor: pointer;
 		width: 30%;
-		margin-right: 3%;
+		image-orientation: 90deg;
 		display: block;
-		image-orientation: from-image;
 		border-radius: 25px;
+		margin-bottom: -10px;
+		margin-right: 3%;
+		
 
 	}
-
+	.slides	{
+		
+				float: left;
+				cursor: pointer;
+				width: 30%;
+				image-orientation: 90deg;
+				display: block;
+				border-radius: 25px;
+				margin-bottom: -10px;
+				margin-right: 3%;
+				
+		
+			}
+	
 	panel p{
 	
 	text-align:left;
