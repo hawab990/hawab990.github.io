@@ -1324,6 +1324,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab
 		font-size: 2em;
 		margin: 0 0 1.5em 0;
 		line-height: 1em;
+		margin-top: 3%;
 	}
 
 		h2.icon {
