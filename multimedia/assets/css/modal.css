@@ -28,7 +28,7 @@ margin-bottom: 50px;
     margin: 0 auto !important;
     display: block;
     width:100% !important;
-    max-width: 700px !important;
+    max-width: 100% !important;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
