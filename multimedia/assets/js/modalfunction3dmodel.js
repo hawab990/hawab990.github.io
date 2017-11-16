@@ -3,7 +3,11 @@
 
 var modal = document.getElementById("my3dmodelModal");
 var img1 = document.getElementById("3dmodelplanning");
-
+var img2 = document.getElementById("wheelchairaccess");
+var img3 = document.getElementById("colors");
+var img4 = document.getElementById("modeldesign2");
+var img5 = document.getElementById("usageofgroups");
+var img6 = document.getElementById("intersect");
 
 
 var modalImg = document.getElementById("img01");
@@ -22,5 +26,11 @@ span.onclick=function(){
 }
 
 img_click(img1);
+img_click(img2);
+img_click(img3);
+img_click(img4);
+img_click(img5);
+img_click(img6);
+
 
 
