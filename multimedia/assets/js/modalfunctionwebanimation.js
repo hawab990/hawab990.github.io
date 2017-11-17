@@ -2,9 +2,13 @@
 //Inspired by Samantha Watson
 
 var modal = document.getElementById("mysoundscapeModal");
-var img1 = document.getElementById("usingAudacity");
-var img2 = document.getElementById("changetempos");
-var img3 = document.getElementById("soundscapeplanning");
+var img1 = document.getElementById("motiontweens");
+var img2 = document.getElementById("webanimationsketch");
+var img3 = document.getElementById("gimpuuserotate");
+var img4 = document.getElementById("gimpusecropping");
+var img5 = document.getElementById("loweringpitch");
+var img6 = document.getElementById("integratingadobeanimation");
+
 
 
 var modalImg = document.getElementById("img01");
@@ -25,4 +29,9 @@ span.onclick=function(){
 img_click(img1);
 img_click(img2);
 img_click(img3);
+img_click(img4);
+img_click(img5);
+img_click(img6);
+
+
 
