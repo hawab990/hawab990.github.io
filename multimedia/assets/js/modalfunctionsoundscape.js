@@ -2,9 +2,10 @@
 //Inspired by Samantha Watson
 
 var modal = document.getElementById("mysoundscapeModal");
-var img1 = document.getElementById("usingAudacity");
-var img2 = document.getElementById("changetempos");
-var img3 = document.getElementById("soundscapeplanning");
+var img1 = document.getElementById("forest");
+var img2 = document.getElementById("usingAudacity");
+var img3 = document.getElementById("changetempos");
+var img4 = document.getElementById("soundscapeplanning");
 
 
 var modalImg = document.getElementById("img01");
@@ -25,4 +26,6 @@ span.onclick=function(){
 img_click(img1);
 img_click(img2);
 img_click(img3);
+img_click(img4);
+
 
