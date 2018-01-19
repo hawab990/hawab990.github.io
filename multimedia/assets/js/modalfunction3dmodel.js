@@ -1,5 +1,4 @@
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
-//Inspired by Samantha Watson
 
 var modal = document.getElementById("my3dmodelModal");
 var img1 = document.getElementById("3dmodelplanning");
